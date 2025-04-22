@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Usługi Hydrauliczne Roman Kaczor - profesjonalne usługi hydrauliczne w Świdnicy i okolicach. Kompleksowe wykonanie instalacji hydraulicznych, pogotowie hydrauliczne, udrażnianie rur. Zadzwoń: +48 123 456 789!" />
+    <meta name="keywords" content="usługi hydrauliczne świdnica, hydraulik świdnica, pogotowie hydrauliczne świdnica, udrażnianie rur świdnica, instalacje hydrauliczne świdnica, roman kaczor hydraulik" />
+    <meta name="author" content="USŁUGI HYDRAULICZNE ROMAN KACZOR" />
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Polish">
+    <meta name="revisit-after" content="7 days">
+    <title>Usługi Hydrauliczne Roman Kaczor | Świdnica</title>
+    <link rel="canonical" href="https://hydraulik-kaczor.pl/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #1565C0;
+  --secondary-color: #0D47A1;
+  --accent-color: #29B6F6;
+  --light-color: #F5F9FF;
+  --dark-color: #0A2647;
+  --text-color: #333;
+  --gradient-bg: linear-gradient(135deg, #1565C0, #29B6F6);
+  --shadow-color: rgba(21, 101, 192, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--text-color);
+  overflow-x: hidden;
+  background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 10px;
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(13, 71, 161, 0.95);
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+nav.scrolled {
+  padding: 0.6rem 1rem;
+  background-color: rgba(10, 38, 71, 0.98);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+  transition: transform 0.3s ease;
+}
+
+.hamburger.active {
+  transform: rotate(90deg);
+}
+
+.nav-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.nav-links a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover:after {
+  width: 70%;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(rgba(10, 38, 71, 0.7), rgba(10, 38, 71, 0.7)), 
+              url('/api/placeholder/1920/1080');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(21, 101, 192, 0.4) 0%, rgba(41, 182, 246, 0.4) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 2rem;
+  margin-top: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 1.2s ease forwards;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  max-width: 80%;
+  margin: 0 auto 2.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease 0.3s forwards;
+}
+
+.hero-content .btn {
+  opacity: 0;
+  animation: fadeIn 1.2s ease 0.6s forwards;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.btn:hover:before {
+  width: 100%;
+}
+
+.btn-primary {
+  background: var(--gradient-bg);
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  margin-left: 1rem;
+}
+
+/* Sections */
+.section {
+  padding: 8rem 2rem;
+}
+
+.about, .features {
+  background: var(--light-color);
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 2rem;
+}
+
+.services, .testimonials {
+  background: white;
+  padding: 8rem 2rem;
+}
+
+.contact {
+  background: var(--gradient-bg);
+  color: white;
+  padding: 8rem 2rem;
+}
+
+/* Section titles */
+.section-title, h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--accent-color);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact h2:after {
+  background: white;
+}
+
+/* About Section */
+.about-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text {
+  margin-top: 1.5rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.service-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.service-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(135deg, rgba(41, 182, 246, 0.1) 0%, rgba(21, 101, 192, 0.1) 100%);
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.service-card:hover:before {
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.2);
+  color: var(--primary-color);
+}
+
+.service-card h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+/* Features Section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.feature-card:after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(41, 182, 246, 0.1) 0%, rgba(21, 101, 192, 0.1) 100%);
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.feature-card:hover:after {
+  transform: scale(2);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+  font-size: 3.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.2) rotate(10deg);
+  color: var(--primary-color);
+}
+
+.feature-card h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Testimonials */
+.testimonials {
+  background: var(--light-color);
+  position: relative;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.testimonial-text:before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--accent-color);
+  opacity: 0.2;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.author-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.author-info p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Counter Section */
+.counter-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.counter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.counter-item {
+  padding: 2rem;
+  flex: 1;
+  min-width: 200px;
+  margin: 1rem;
+}
+
+.counter-value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.counter-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Call to Action */
+.cta-section {
+  padding: 8rem 2rem;
+  background: var(--light-color);
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.cta-container p {
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.realizacje {
+    padding: 8rem 2rem;
+    position: relative;
+    background-color: var(--light-color);
+    overflow: hidden;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 2rem auto 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.realizacje-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.realizacja-card {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    aspect-ratio: 3/4;
+}
+
+.realizacja-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.realizacja-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.realizacja-card:hover .realizacja-image {
+    transform: scale(1.05);
+}
+
+.realizacja-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(13, 71, 161, 0.9), rgba(13, 71, 161, 0.1), transparent);
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.realizacja-card:hover .realizacja-overlay {
+    opacity: 1;
+}
+
+.realizacja-title {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.realizacja-category {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+/* Water effect on cards */
+.realizacja-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 43%;
+    background-color: rgba(41, 182, 246, 0.1);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    animation: wave 8s infinite linear;
+}
+
+.realizacja-card:hover::before {
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg) translate(-10px, 10px);
+    }
+    100% {
+        transform: rotate(360deg) translate(-10px, 10px);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .realizacje-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .realizacje {
+        padding: 6rem 1rem;
+    }
+    
+    .realizacje-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+    }
+    
+    .realizacja-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Contact */
+.contact-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.contact-info {
+  padding: 2rem 0;
+}
+
+.contact-info p {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  margin-right: 1rem;
+  width: 24px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.form-submit {
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-submit:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.map {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 4rem 2rem 1rem;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-section h4:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: var(--accent-color);
+}
+
+.footer-section p {
+  margin-bottom: 0.8rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-5px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* Animated cards */
+.animated-card {
+  transition: all 0.5s ease;
+}
+
+.animated-card:hover {
+  transform: translateY(-15px);
+}
+
+/* Preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-content {
+  text-align: center;
+  color: white;
+}
+
+.preloader-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: var(--accent-color);
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Scrollbar */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+
+.scroll-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top i {
+  font-size: 1.2rem;
+}
+
+/* Cookie alert */
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+  z-index: 1000;
+  display: none;
+}
+
+.cookie-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cookie-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.cookie-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.accept-cookies {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+.reject-cookies {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.newsletter-input {
+  flex: 1;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 50px 0 0 50px;
+}
+
+.newsletter-btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0 1.5rem;
+  border-radius: 0 50px 50px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background-color: var(--primary-color);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  
+  .about-grid, .contact-content, .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feature-card, .counter-item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    padding: 6rem 2rem 2rem;
+    flex-direction: column;
+    text-align: left;
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.9rem;
+  }
+   .hero-content .btn {
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .services-grid, .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .counter-container {
+    flex-direction: column;
+  }
+  
+  .counter-item {
+    margin: 1rem 0;
+  }
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+  }
+  
+  /* Better responsive handling */
+  html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Better container control for responsive layout */
+.section, .about-container, .services-grid, 
+.features-grid, .testimonial-grid,
+.contact-content, .footer-content {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+/* Improved responsive breakpoints */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 250px;
+  }
+  
+  .section {
+    padding: 4rem 1rem;
+  }
+  
+  .section-title, h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .counter-value {
+    font-size: 2.5rem;
+  }
+  
+  .feature-card, .service-card, .testimonial-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Water drop effect */
+.water-drop {
+  position: relative;
+  overflow: hidden;
+}
+
+.water-drop:before,
+.water-drop:after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 43%;
+  background-color: rgba(41, 182, 246, 0.1);
+  left: -50px;
+  top: -50px;
+  animation: wave 5s infinite linear;
+}
+
+.water-drop:after {
+  animation-delay: 0.5s;
+  opacity: 0.7;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ripple effect for buttons */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 0;
+  pointer-events: none;
+  animation: ripple-effect 0.6s ease-out;
+}
+
+@keyframes ripple-effect {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Highlight effect for phone numbers */
+.phone-pulse {
+  animation: phone-highlight 2s infinite;
+  display: inline-block;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+@keyframes phone-highlight {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    color: #fff;
+  }
+}
+</style>
+</head>
+<body>
+    <!-- Scroll to top button -->
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                ROMAN KACZOR
+            </a>
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#start">Start</a>
+                <a href="#about">O Nas</a>
+                <a href="#services">Usługi</a>
+                <a href="#testimonials">Opinie</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="start" class="hero">
+        <div class="hero-content">
+            <h1>Profesjonalne Usługi Hydrauliczne Świdnica</h1>
+            <p>Roman Kaczor - Profesjonalny hydraulik z doświadczeniem od 1996 roku</p>
+            <div class="hero-buttons">
+                <a href="tel:+48123456789" class="btn btn-primary ripple">
+                    <i class="fas fa-phone-alt"></i> Zadzwoń teraz
+                </a>
+                <a href="#services" class="btn btn-outline ripple">Nasze Usługi</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="counter" class="counter-section">
+        <div class="counter-container">
+            <div class="counter-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="counter-value" data-target="29">0</div>
+                <div class="counter-title">Lat Doświadczenia</div>
+            </div>
+            <div class="counter-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="counter-value" data-target="100">0</div>
+                <div class="counter-title">% Zadowolonych Klientów</div>
+            </div>
+            <div class="counter-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="counter-value" data-target="5">0</div>
+                <div class="counter-title">Wykwalifikowanych pracowników</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-grid">
+                <div class="about-content water-drop" data-aos="fade-right">
+                    <h2>Kim Jesteśmy</h2>
+                    <div class="about-text">
+                        <p>
+                            <strong>Usługi Hydrauliczne Roman Kaczor</strong> to firma z wieloletnim doświadczeniem działająca na terenie Świdnicy i okolic. Od 1996 roku zapewniamy naszym klientom profesjonalne usługi hydrauliczne z gwarancją solidności i rzetelności.
+                        </p>
+                        <p>
+                            Nasza firma specjalizuje się w kompleksowym wykonaniu instalacji hydraulicznych oraz naprawach awaryjnych. Oferujemy usługi zarówno dla klientów indywidualnych jak i firm. Dzięki wieloletniemu doświadczeniu oraz profesjonalnemu podejściu, zapewniamy najwyższą jakość usług.
+                        </p>
+                        <ul style="list-style: none; margin-top: 2rem;">
+                            <li data-aos="fade-up" data-aos-delay="100"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>Całodobowe pogotowie hydrauliczne</li>
+                            <li data-aos="fade-up" data-aos-delay="200"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>Szybki czas realizacji</li>
+                            <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>Konkurencyjne ceny</li>
+                            <li data-aos="fade-up" data-aos-delay="400"><i class="fas fa-check" style="color: var(--accent-color); margin-right: 10px;"></i>Gwarancja na wykonane usługi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="/api/placeholder/600/400" alt="Usługi hydrauliczne" class="transform-3d" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2 data-aos="fade-up">Dlaczego warto nas wybrać?</h2>
+        <div class="features-grid">
+            <div class="feature-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h3>Doświadczenie</h3>
+                <p>Ponad 29 lat doświadczenia w branży hydraulicznej na terenie Świdnicy i okolic</p>
+            </div>
+            <div class="feature-card tilt-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Szybkość</h3>
+                <p>Natychmiastowa reakcja i szybka realizacja zgłoszeń, również awaryjnych</p>
+            </div>
+            <div class="feature-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                    <i class="fas fa-thumbs-up"></i>
+                </div>
+                <h3>Jakość</h3>
+                <p>Profesjonalne podejście i najwyższa jakość wykonanych usług z gwarancją</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2 data-aos="fade-up">Nasze Usługi</h2>
+      <div class="services-grid">
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="service-icon">
+                  <i class="fas fa-wrench"></i>
+              </div>
+              <h3>Kompleksowe instalacje hydrauliczne</h3>
+              <p>Projektowanie i montaż nowych instalacji wodociągowych, kanalizacyjnych i grzewczych w domach i mieszkaniach.</p>
+          </div>
+          
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="service-icon">
+                  <i class="fas fa-tools"></i>
+              </div>
+              <h3>Przeróbki instalacji</h3>
+              <p>Modyfikacje i modernizacje istniejących instalacji hydraulicznych dostosowane do potrzeb klienta.</p>
+          </div>
+          
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="service-icon">
+                  <i class="fas fa-water"></i>
+              </div>
+              <h3>Udrażnianie rur</h3>
+              <p>Profesjonalne czyszczenie i udrażnianie rur kanalizacyjnych oraz odpływów przy użyciu nowoczesnego sprzętu.</p>
+          </div>
+          
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="service-icon">
+                  <i class="fas fa-shower"></i>
+              </div>
+              <h3>Montaż armatury</h3>
+              <p>Fachowy montaż baterii, umywalek, wanien, pryszniców, toalet i innych elementów armatury łazienkowej i kuchennej.</p>
+          </div>
+          
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+              <div class="service-icon">
+                  <i class="fas fa-screwdriver"></i>
+              </div>
+              <h3>Drobne naprawy</h3>
+              <p>Szybkie i skuteczne naprawy cieknących kranów, spłuczek, wymiany uszczelek i inne drobne prace hydrauliczne.</p>
+          </div>
+          
+          <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+              <div class="service-icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+              </div>
+              <h3>Pogotowie hydrauliczne</h3>
+              <p>Usługi awaryjne w przypadku pęknięcia rur, zalania lub innych nagłych problemów hydraulicznych.</p>
+          </div>
+      </div>
+    </section>
+
+    <section id="realizacje" class="realizacje section-bg-light">
+      <div class="container">
+          <h2 class="section-title" data-aos="fade-up">Wybrane Realizacje</h2>
+          <p class="section-description" data-aos="fade-up" data-aos-delay="100">
+              Zapoznaj się z przykładami naszych prac wykonanych dla zadowolonych klientów
+          </p>
+          <div class="realizacje-grid">
+              <div class="realizacja-card" data-aos="zoom-in" data-aos-delay="100">
+                  <img src="/api/placeholder/400/600" alt="Remont łazienki" class="realizacja-image">
+                  <div class="realizacja-overlay">
+                      <h3 class="realizacja-title">Kompleksowy remont łazienki</h3>
+                      <p class="realizacja-category">Instalacje hydrauliczne</p>
+                  </div>
+              </div>
+              <div class="realizacja-card" data-aos="zoom-in" data-aos-delay="200">
+                  <img src="/api/placeholder/400/600" alt="Instalacja wodno-kanalizacyjna" class="realizacja-image">
+                  <div class="realizacja-overlay">
+                      <h3 class="realizacja-title">Instalacja wodno-kanalizacyjna</h3>
+                      <p class="realizacja-category">Nowe instalacje</p>
+                  </div>
+              </div>
+              <div class="realizacja-card" data-aos="zoom-in" data-aos-delay="300">
+                  <img src="/api/placeholder/400/600" alt="Udrażnianie rur" class="realizacja-image">
+                  <div class="realizacja-overlay">
+                      <h3 class="realizacja-title">Udrażnianie rur specjalistycznym sprzętem</h3>
+                      <p class="realizacja-category">Pogotowie hydrauliczne</p>
+                  </div>
+              </div>
+              <div class="realizacja-card" data-aos="zoom-in" data-aos-delay="400">
+                  <img src="/api/placeholder/400/600" alt="Montaż grzejnika" class="realizacja-image">
+                  <div class="realizacja-overlay">
+                      <h3 class="realizacja-title">Montaż i wymiana grzejników</h3>
+                      <p class="realizacja-category">Instalacje grzewcze</p>
+                  </div>
+              </div>
+              <div class="realizacja-card" data-aos="zoom-in" data-aos-delay="500">
+                  <img src="/api/placeholder/400/600" alt="Wymiana przyłącza" class="realizacja-image">
+                  <div class="realizacja-overlay">
+                      <h3 class="realizacja-title">Wymiana przyłącza wodociągowego</h3>
+                      <p class="realizacja-category">Przyłącza zewnętrzne</p>
+                  </div>
+              </div>
+              <div class="realizacja-card" data-aos="zoom-in" data-aos-delay="600">
+                  <img src="/api/placeholder/400/600" alt="Modernizacja instalacji" class="realizacja-image">
+                  <div class="realizacja-overlay">
+                      <h3 class="realizacja-title">Modernizacja instalacji w budynku wielorodzinnym</h3>
+                      <p class="realizacja-category">Kompleksowe usługi</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section id="cta" class="cta-section">
+        <div class="cta-container">
+            <h2 data-aos="fade-up">Potrzebujesz hydraulika w Świdnicy?</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Zadzwoń do nas już teraz, aby umówić wizytę lub skorzystać z pogotowia hydraulicznego!</p>
+            <a href="tel:+48123456789" class="btn btn-primary ripple pulse" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-phone-alt"></i> Zadzwoń: <span class="phone-pulse">+48 123 456 789</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 data-aos="fade-up">Co mówią nasi klienci</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card animated-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-text">
+                    <p>Bardzo profesjonalna obsługa i szybki czas realizacji. Pan Roman uratował nas przed zalaniem, przyjeżdżając w środku nocy. Zdecydowanie polecam!</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Anna Kowalska</h4>
+                        <p>★★★★★</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="testimonial-card animated-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-text">
+                    <p>Korzystałem z usług Pana Romana przy kompleksowym remoncie łazienki. Wszystko zostało wykonane solidnie i zgodnie z ustaleniami. Bardzo dobry fachowiec!</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Marek Nowak</h4>
+                        <p>★★★★★</p>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="testimonial-card animated-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="testimonial-text">
+                    <p>Szybka i bezproblemowa naprawa cieknącej rury. Przystępna cena i profesjonalne podejście. Z czystym sumieniem mogę polecić usługi Pana Romana.</p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h4>Katarzyna Wiśniewska</h4>
+                        <p>★★★★★</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <div class="contact-info" data-aos="fade-right">
+                <h2>Skontaktuj się z nami</h2>
+                <p><i class="fas fa-map-marker-alt"></i> ul. Mikołaja Kopernika 5/5, 58-100 Świdnica</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+48663727330" style="color: white; text-decoration: none;"><span class="phone-pulse">+48 663 727 330</span></a></p>
+                <p><i class="fas fa-envelope"></i> romankaczor69@gmail.com</p>
+                <p><i class="fas fa-clock"></i> Godziny: Pon-Pt: 7:00-17:00, Sob: 7:00-15:00</p>
+            </div>
+            <div class="map" data-aos="fade-left">
+                <!-- Placeholder for Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.2032939281144!2d16.485404476902367!3d50.84182997143125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e50e1eda70fc3%3A0x91f2294ac49824ae!2sMiko%C5%82aja%20Kopernika%205%2C%2058-100%20%C5%9Awidnica!5e0!3m2!1spl!2spl!4v1713711844652!5m2!1spl!2spl" width="100%" height="450" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>USŁUGI HYDRAULICZNE ROMAN KACZOR</h4>
+                <p>Profesjonalne usługi hydrauliczne dla domów i firm w Świdnicy i okolicach.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Godziny otwarcia</h4>
+                <p>Poniedziałek - Piątek: 7:00 - 17:00</p>
+                <p>Sobota: 7:00 - 15:00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Szybki kontakt</h4>
+                <p><i class="fas fa-map-marker-alt"></i> ul. Mikołaja Kopernika 5/5, 58-100 Świdnica</p>
+                <p><i class="fas fa-phone"></i> +48 663 727 330</p>
+                <p><i class="fas fa-envelope"></i> romankaczor69@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Usługi Hydrauliczne Roman Kaczor - Wszystkie prawa zastrzeżone
+        </div>
+    </footer>
+
+    <!-- JavaScript libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Preloader
+    setTimeout(function() {
+        document.querySelector('.preloader').style.display = 'none';
+        document.body.classList.add('loaded');
+    }, 1500);
+    
+    // Initialize AOS (Animate on Scroll)
+    AOS.init({
+        duration: 800,
+        easing: 'ease',
+        once: true,
+        offset: 100
+    });
+
+    // Navigation scroll effect
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        const scrollTop = window.scrollY;
+        
+        if (scrollTop > 100) {
+            nav.classList.add('scrolled');
+            document.querySelector('.scroll-top').classList.add('active');
+        } else {
+            nav.classList.remove('scrolled');
+            document.querySelector('.scroll-top').classList.remove('active');
+        }
+    });
+    
+    // Mobile Navigation Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (hamburger) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Scroll to top button
+    const scrollTopBtn = document.querySelector('.scroll-top');
+    if (scrollTopBtn) {
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+    
+    // Counter animation
+    const counterSection = document.querySelector('.counter-section');
+    if (counterSection) {
+        const counters = document.querySelectorAll('.counter-value');
+        let counterStarted = false;
+        
+        function startCounter() {
+            if (isInViewport(counterSection) && !counterStarted) {
+                counterStarted = true;
+                counters.forEach(counter => {
+                    const target = parseInt(counter.getAttribute('data-target'));
+                    const duration = 2000; // 2 seconds
+                    const step = target / (duration / 16); // 60fps
+                    
+                    let current = 0;
+                    const counterTimer = setInterval(() => {
+                        current += step;
+                        counter.textContent = Math.round(current);
+                        
+                        if (current >= target) {
+                            counter.textContent = target;
+                            clearInterval(counterTimer);
+                        }
+                    }, 16);
+                });
+            }
+        }
+        
+        // Check if counter section is in viewport on scroll
+        window.addEventListener('scroll', startCounter);
+        // Also check on page load
+        startCounter();
+    }
+    
+    // 3D tilt effect for cards with tilt-card class
+    const tiltCards = document.querySelectorAll('.tilt-card');
+    
+    tiltCards.forEach(card => {
+        card.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+        });
+    });
+    
+    // Add ripple effect to elements with ripple class
+    const rippleElements = document.querySelectorAll('.ripple');
+    
+    rippleElements.forEach(element => {
+        element.addEventListener('click', function(e) {
+            const x = e.clientX - e.target.getBoundingClientRect().left;
+            const y = e.clientY - e.target.getBoundingClientRect().top;
+            
+            const ripple = document.createElement('span');
+            ripple.style.position = 'absolute';
+            ripple.style.width = '0';
+            ripple.style.height = '0';
+            ripple.style.borderRadius = '50%';
+            ripple.style.transform = 'translate(-50%, -50%)';
+            ripple.style.backgroundColor = 'rgba(255,255,255,0.4)';
+            ripple.style.left = x + 'px';
+            ripple.style.top = y + 'px';
+            ripple.style.animation = 'ripple 0.8s ease-out';
+            
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 800);
+        });
+    });
+    
+    // Add keyframe for ripple animation
+    if (!document.querySelector('#ripple-animation')) {
+        const style = document.createElement('style');
+        style.id = 'ripple-animation';
+        style.innerHTML = `
+            @keyframes ripple {
+                to {
+                    width: 300px;
+                    height: 300px;
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+    
+    // Form validation if there's a contact form
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const inputs = this.querySelectorAll('input, textarea');
+            
+            inputs.forEach(input => {
+                if (input.required && input.value.trim() === '') {
+                    isValid = false;
+                    input.classList.add('error');
+                } else {
+                    input.classList.remove('error');
+                }
+                
+                if (input.type === 'email' && input.value.trim() !== '') {
+                    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailPattern.test(input.value.trim())) {
+                        isValid = false;
+                        input.classList.add('error');
+                    }
+                }
+            });
+            
+            if (isValid) {
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.className = 'form-success';
+                successMessage.textContent = 'Dziękujemy! Twoja wiadomość została wysłana.';
+                successMessage.style.backgroundColor = 'rgba(255,255,255,0.2)';
+                successMessage.style.padding = '2rem';
+                successMessage.style.borderRadius = '10px';
+                successMessage.style.textAlign = 'center';
+                successMessage.style.marginTop = '2rem';
+                
+                // Replace form with success message
+                this.innerHTML = '';
+                this.appendChild(successMessage);
+                
+                // In real world, you would send the form data to server here
+            }
+        });
+    }
+    
+    // Add pulse animation to service cards on hover
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            const icon = this.querySelector('.service-icon');
+            icon.style.animation = 'pulse 0.8s infinite';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            const icon = this.querySelector('.service-icon');
+            icon.style.animation = '';
+        });
+    });
+    
+    // Cookie alert (Optional)
+    const cookieAlert = document.querySelector('.cookie-alert');
+    
+    if (cookieAlert) {
+        const acceptBtn = document.querySelector('.accept-cookies');
+        const rejectBtn = document.querySelector('.reject-cookies');
+        
+        // Show cookie alert if not previously accepted
+        if (!localStorage.getItem('hydraulik-cookies-accepted')) {
+            setTimeout(() => {
+                cookieAlert.style.display = 'block';
+            }, 2000);
+        }
+        
+        if (acceptBtn) {
+            acceptBtn.addEventListener('click', function() {
+                localStorage.setItem('hydraulik-cookies-accepted', 'true');
+                cookieAlert.style.display = 'none';
+            });
+        }
+        
+        if (rejectBtn) {
+            rejectBtn.addEventListener('click', function() {
+                cookieAlert.style.display = 'none';
+            });
+        }
+    }
+    
+    // Helper function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+            rect.bottom >= 0
+        );
+    }
+    
+    // Add animation to phone numbers
+    const phonePulse = document.querySelectorAll('.phone-pulse');
+    
+    phonePulse.forEach(phone => {
+        phone.addEventListener('mouseenter', function() {
+            this.style.animation = 'phone-highlight 0.8s infinite';
+        });
+        
+        phone.addEventListener('mouseleave', function() {
+            this.style.animation = 'phone-highlight 2s infinite';
+        });
+    });
+    
+    // Add water drop animation to appropriate elements
+    const waterDropElements = document.querySelectorAll('.water-drop');
+    
+    waterDropElements.forEach(element => {
+        const waterDrop1 = document.createElement('div');
+        waterDrop1.className = 'water-drop-1';
+        waterDrop1.style.position = 'absolute';
+        waterDrop1.style.width = '100px';
+        waterDrop1.style.height = '100px';
+        waterDrop1.style.borderRadius = '43%';
+        waterDrop1.style.backgroundColor = 'rgba(41, 182, 246, 0.1)';
+        waterDrop1.style.left = '-50px';
+        waterDrop1.style.top = '-50px';
+        waterDrop1.style.animation = 'wave 5s infinite linear';
+        
+        const waterDrop2 = waterDrop1.cloneNode(true);
+        waterDrop2.className = 'water-drop-2';
+        waterDrop2.style.animationDelay = '0.5s';
+        waterDrop2.style.opacity = '0.7';
+        
+        element.style.position = 'relative';
+        element.style.overflow = 'hidden';
+        element.appendChild(waterDrop1);
+        element.appendChild(waterDrop2);
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Dodanie linku do nawigacji
+    const navLinks = document.querySelector('.nav-links');
+    const newLink = document.createElement('a');
+    newLink.href = '#realizacje';
+    newLink.textContent = 'Realizacje';
+    
+    // Wstawiamy link przed Opinie
+    const testimonialLink = Array.from(navLinks.children).find(link => link.textContent === 'Opinie');
+    if (testimonialLink) {
+        navLinks.insertBefore(newLink, testimonialLink);
+    } else {
+        navLinks.appendChild(newLink);
+    }
+});
+    </script>
+</body>
+</html>
